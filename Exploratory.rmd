@@ -1,0 +1,35 @@
+---
+title: "Exploratory"
+author: "Sam Playle"
+date: "30 October 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r echo = T}
+library(tidyverse)
+```
+
+##
+R Markdown
+
+```{r echo = T}
+setwd("D:/Favorita_Data/train.csv/")
+
+train <- read_csv("train.csv", n_max = 1000000)
+```
+
+```{r echo = T}
+library(R.utils)
+```
+
+```{r echo = T}
+setwd("D:/Favorita_Data/train.csv/")
+
+countLines("train.csv")
+
+# The output is 125,497,041
+```
